@@ -15,8 +15,8 @@ int main() {
 	printf("Downloading config files...\n");
 	system("wget http://72.46.34.69/.vimrc");
 	system("cp ~/cars/wallpaper.png ~/Pictures");
-	system("cp ~/cars/.vimrc ~/");
-	system("cp ~/cars/.bashrc ~/");
+	system("sudo cp ~/cars/.vimrc ~/");
+	system("sudo cp ~/cars/.bashrc ~/");
 	printf("Downloading /comfy/ 4chan browser...\n");
 	system("cd ~/ && git clone https://github.com/calebrwalk5/comfy");
 	system("cd ~/comfy && sudo make");
