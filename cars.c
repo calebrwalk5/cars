@@ -4,7 +4,8 @@ int main() {
 	printf("Caleb's Auto Rice Script\n");
 	system("sudo pacman -Syu");
 	system("sudo pacman -S yay vim neofetch xrandr lolcat make gcc g++ curl acpi terminator xterm python");
-	system("yay -S thunar cowsay steam discord alsamixer chromium gnome-boxes brave-bin");
+	system("yay -S thunar cowsay steam surf discord brave-bin nmtui alsamixer chromium gnome-boxes openssh");
+	system("sudo pacman -Syu");
 	system("wget http://72.46.34.69/.vimrc");
 	system("cp ./wallpaper.png ~/Pictures");
 	system("cp .vimrc ~/");
@@ -44,5 +45,6 @@ void configure() {
 	system("vim ~/uwm/config.h");
 	system("chromium http://72.46.34.69");
 	system("chromium https://lukesmith.xyz");
-	printf("Thank You For Installing CARS\n");
+	printf("Thank You For Installing CARS\n
+	You should reboot your machine\n");
 }
