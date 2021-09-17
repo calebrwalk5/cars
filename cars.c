@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+// Caleb's Auto Rice Script for Arch Linux
+// CARS installs useful applications, UWM, Luke Smith's build of Simple Terminal, and the /comfy/ 4chan browser!
+// Run CARS as sudo, and you're good to go
+
 int main() {
 	printf("Caleb's Auto Rice Script\n");
 	system("sudo pacman -Syu");
