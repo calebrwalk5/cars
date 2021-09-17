@@ -14,14 +14,14 @@ int main() {
 	system("sudo pacman -Syu");
 	printf("Downloading config files...\n");
 	system("wget http://72.46.34.69/.vimrc");
-	system("cp ./wallpaper.png ~/Pictures");
-	system("cp .vimrc ~/");
-	system("cp .bashrc ~/");
+	system("cp ~/cars/wallpaper.png ~/Pictures");
+	system("cp ~/cars/.vimrc ~/");
+	system("cp ~/cars/.bashrc ~/");
 	printf("Downloading /comfy/ 4chan browser...\n");
 	system("cd ~/ && git clone https://github.com/calebrwalk5/comfy");
-	system("sudo make");
-	system("sudo cp comfy /bin");
-	system("wget https://raw.githubusercontent.com/calebrwalk5/overclock-nvidia-linux/main/overclock.sh");
+	system("cd ~/comfy && sudo make");
+	system("sudo cp ~/comfy/comfy /bin");
+	system("cd ~/ && wget https://raw.githubusercontent.com/calebrwalk5/overclock-nvidia-linux/main/overclock.sh");
 	uwm();
 	return 0;
 }
