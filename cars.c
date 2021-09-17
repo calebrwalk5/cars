@@ -3,13 +3,16 @@
 int main() {
 	printf("Caleb's Auto Rice Script\n");
 	system("sudo pacman -Syu");
+	printf("Downloading packages...\n");
 	system("sudo pacman -S yay vim neofetch xrandr lolcat make gcc g++ curl acpi terminator xterm python");
 	system("yay -S thunar cowsay gparted geany leafpad kate feh steam surf discord brave-bin nmtui alsamixer chromium gnome-boxes openssh");
 	system("sudo pacman -Syu");
+	printf("Downloading config files...\n");
 	system("wget http://72.46.34.69/.vimrc");
 	system("cp ./wallpaper.png ~/Pictures");
 	system("cp .vimrc ~/");
 	system("cp .bashrc ~/");
+	printf("Downloading /comfy/ 4chan browser...\n");
 	system("cd ~/ && git clone https://github.com/calebrwalk5/comfy");
 	system("sudo make");
 	system("sudo cp comfy /bin");
@@ -19,6 +22,7 @@ int main() {
 }
 
 void uwm() {
+	printf("Downloading UWM...\n");
 	system("cd ~/ && git clone https://github.com/calebrwalk5/uwm");
 	system("cd ~/uwm && feh --bg-scale ~/Pictures/wallpaper.png");
 	system("cd ~/uwm && make");
@@ -34,6 +38,7 @@ void uwm() {
 }
 
 void st() {
+	printf("Configuring termminal...\n");
 	system("cd ~/ && git clone https://github.com/LukeSmithxyz/st");
 	system("cd ~/st && sudo make install");
 	printf("Simple Terminal installed\n");
@@ -45,6 +50,5 @@ void configure() {
 	system("vim ~/uwm/config.h");
 	system("chromium http://72.46.34.69");
 	system("chromium https://lukesmith.xyz");
-	printf("Thank You For Installing CARS\n
-	You should reboot your machine\n");
+	printf("Thank You For Installing CARS\nYou should reboot your machine\n");
 }
