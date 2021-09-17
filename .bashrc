@@ -84,6 +84,7 @@ fi
 #alias l='ls -CF'
 alias c='clear'
 alias more='less'
+alias upall='sudo apt update && sudo apt upgrade'
 alias gclone='git clone '
 alias ssh-nas='ssh server@72.46.34.69'
 
@@ -108,6 +109,7 @@ if ! shopt -oq posix; then
 fi
 
 feh --bg-fill ~/Pictures/wallpaper.png
+neofetch | lolcat
 
 grey='\[\033[1;30m\]'
 red='\[\033[0;31m\]'
