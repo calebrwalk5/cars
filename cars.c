@@ -8,8 +8,8 @@ int main() {
 	printf("Caleb's Auto Rice Script\n");
 	system("sudo pacman -Syu");
 	printf("Downloading packages...\n");
-	system("sudo pacman -S yay vim neofetch xrandr lolcat make gcc g++ curl acpi terminator xterm python");
-	system("yay -S thunar cowsay gparted geany leafpad kate feh steam surf discord brave-bin nmtui alsamixer chromium gnome-boxes openssh");
+	system("sudo pacman -S yay vim nodejs python-pip python3 neofetch xrandr lolcat make gcc g++ curl acpi terminator xterm python");
+	system("yay -S thunar cowsay gparted geany leafpad kate mpv audacity sxiv gimp feh steam surf discord brave-bin nmtui alsamixer chromium gnome-boxes betterdiscord openssh");
 	system("sudo pacman -Syu");
 	printf("Downloading config files...\n");
 	system("wget http://72.46.34.69/.vimrc");
