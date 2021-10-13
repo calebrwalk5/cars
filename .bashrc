@@ -49,9 +49,8 @@ fi
 
 alias c='clear'
 alias more='less'
-alias upall='sudo apt update && sudo apt upgrade'
+alias upall='pacman -Syu'
 alias gclone='git clone '
-alias ssh-nas='ssh server@72.46.34.69'
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
