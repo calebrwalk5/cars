@@ -53,7 +53,7 @@ void st() {
 void configure() {
 	system("xrandr");
 	system("vim ~/uwm/config.h");
-	system("chromium http://72.46.34.69");
-	system("chromium https://lukesmith.xyz");
+	system("brave http://72.46.34.69");
+	system("brave https://lukesmith.xyz");
 	printf("Thank You For Installing CARS\nYou should reboot your machine\n");
 }
