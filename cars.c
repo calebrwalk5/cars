@@ -22,24 +22,8 @@ int main() {
 	system("cd ~/comfy && sudo make");
 	system("sudo cp ~/comfy/comfy /bin");
 	system("cd ~/ && wget https://raw.githubusercontent.com/calebrwalk5/overclock-nvidia-linux/main/overclock.sh");
-	uwm();
-	return 0;
-}
-
-void uwm() {
-	printf("Downloading UWM...\n");
-	system("cd ~/ && git clone https://github.com/calebrwalk5/uwm");
-	system("cd ~/uwm && feh --bg-scale ~/Pictures/wallpaper.png");
-	system("cd ~/uwm && make");
-	system("cd ~/uwm && sudo make clean install");
-	system("cd ~/uwm && cd anus-term && make");
-	system("cd ~/uwm && sudo cp ./anus-term/bin/anus-term /bin/");
-	system("cd ~/uwm && echo 'exec uwm' >> ~/.xinitrc");
-	system("cd ~/uwm && sudo cp uwm.desktop /usr/share/xsessions/");
-	system("cd ~/uwm && echo 'feh --bg-scale ~/uwm/wallpaper.png' >> ~/.bashrc");
-	system("cd ~/uwm && sudo chmod +x clock.sh");
-	printf("UWM installed\n");
 	st();
+	return 0;
 }
 
 void st() {
