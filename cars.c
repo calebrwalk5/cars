@@ -13,7 +13,7 @@ int main() {
 	system("yay -S discord youtube-dl brave-bin nmtui alsamixer chromium gnome-boxes betterdiscord openssh");
 	system("sudo pacman -Syu");
 	printf("Downloading config files...\n");
-	system("wget http://72.46.34.69/.vimrc");
+	system("wget http://bateman3814.lol/downloads/.vimrc");
 	system("cp ~/cars/wallpaper.png ~/Pictures");
 	system("sudo cp ~/cars/.vimrc ~/");
 	system("sudo cp ~/cars/.bashrc ~/");
@@ -21,7 +21,6 @@ int main() {
 	system("cd ~/ && git clone https://github.com/calebrwalk5/comfy");
 	system("cd ~/comfy && sudo make");
 	system("sudo cp ~/comfy/comfy /bin");
-	system("cd ~/ && wget https://raw.githubusercontent.com/calebrwalk5/overclock-nvidia-linux/main/overclock.sh");
 	st();
 	return 0;
 }
