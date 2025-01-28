@@ -35,6 +35,5 @@ void st() {
 
 void configure() {
 	system("xrandr");
-	system("brave http://anusO1.duckdns.org");
 	printf("Thank You For Installing CARS\nYou should reboot your machine\n");
 }
